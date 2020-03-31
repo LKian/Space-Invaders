@@ -391,29 +391,6 @@ template {
   border-color: #0d1e53;
 }
 
-.section,
-.header,
-.footer {
-  width: 100%;
-}
-
-.section {
-  padding: 25px 0;
-  background-color: pink;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 25px 0;
-}
-
-.section-subheading {
-  text-align: center;
-  color: #4a6fe2;
-  margin-bottom: 15px;
-}
-
 p {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
@@ -453,147 +430,34 @@ a:hover {
   text-decoration: underline;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif, arial, helvetica;
-}
-
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.activity-grid {
+.grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
+  width: 300px;
+  height: 300px;
 }
 
-.activity-grid::after {
-  content: "";
-  width: 100%;
-}
-@media (min-width: 551px) {
-  .activity-grid::after {
-    width: calc(33.33%);
-  }
-}
-@media (min-width: 801px) {
-  .activity-grid::after {
-    width: calc(25%);
-  }
+.grid .square {
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
 }
 
-li {
-  list-style: none;
-  padding: 10px 5px;
-  width: 50%;
-  border: 2px solid #eee;
-  color: #eee;
-  justify-content: center;
-  transition: transform 0.4s ease;
-}
-@media (min-width: 551px) {
-  li {
-    width: calc(33.33%);
-  }
-}
-@media (min-width: 801px) {
-  li {
-    width: calc(25%);
-  }
+.shooter {
+  background-color: #009;
 }
 
-li.selected {
-  display: flex;
-  border-color: #999;
-  color: #999;
+.invader {
+  background-color: purple;
+  border-radius: 50%;
 }
 
-.activity-name {
-  min-height: 65px;
-  line-height: 1.4rem;
+.boom {
+  background-color: red;
 }
 
-.activity-map {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.fas {
-  color: #222;
-}
-
-.fas.fa-map-marker-alt {
-  color: #900;
-}
-
-.activity-grid [data-category=shop] {
-  background-color: #50514f;
-}
-.activity-grid [data-category=coffee] {
-  background-color: #f25f5c;
-}
-.activity-grid [data-category=eat] {
-  background-color: #247ba0;
-}
-.activity-grid [data-category=relax] {
-  background-color: #70c1b3;
-}
-.activity-grid [data-category=see] {
-  background-color: #70c1b3;
-}
-.activity-grid [data-category=explore] {
-  background-color: #ffe066;
-}
-.activity-grid [data-category=drink] {
-  background-color: #b744b8;
-}
-
-.container-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.container-buttons:after {
-  content: "";
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-.container-buttons .button {
-  margin: 0 10px;
-}
-
-.button i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 55px;
-  height: 55px;
-}
-
-.button:hover i {
-  color: #fff;
-}
-
-.button:hover::before {
-  opacity: 1;
-  width: 100%;
+.laser {
+  background-color: orange;
 }
 
 /*!
