@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+@import "../utilities/variables";
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  transition: all 200ms ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    transition: all 0.4s;
+  }
+}
+
+.button--primary {
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-white;
+    border-color: darken($color: $color-primary, $amount: 40%);
+    background-color: $color-primary;
+  }
+}
+
+.button--secondary {
+  background-color: $color-primary;
+  color: $color-white;
+  outline: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-white;
+    border-color: darken($color: $color-primary, $amount: 40%);
+  }
+}
+
+.button--alternative {
+  background-color: transparent;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-primary;
+    color: $color-white;
+    border-color: darken($color: $color-primary, $amount: 40%);
+  }
+}
